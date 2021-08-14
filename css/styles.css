@@ -1,0 +1,6102 @@
+body{
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face {
+    font-family:'comfort';
+    src: url(../font/Comfortaa-Regular.ttf);
+}
+
+/*menu count + slider*/
+
+.wrap{
+    position: relative;
+    height: 100vh;
+    padding: 0;
+    margin-bottom: 10%;
+
+}
+
+.botnna{
+    width: 100%;
+    font-family: comfort;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+
+.botnna:hover,
+.botnna:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #e2fb01;
+  /*transform: translateY(-0.25em);*/
+  transition: all 0.4s ease-in;
+
+}
+
+
+.botnna.na{
+    width: 100%;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+.botnna.na:hover,
+.botnna.na:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #ed3fa2;
+  transition: all 0.4s ease-in;
+
+}
+
+.botnna.nb{
+    width: 100%;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+
+.botnna.nb:hover,
+.botnna.nb:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #3b93c3;
+  transition: all 0.4s ease-in;
+
+}
+
+
+
+
+
+
+.headroom{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "h1 h2 h3";
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(2, 2, 2, 0.384);
+    overflow: hidden;
+    z-index: 2;
+    
+}
+
+
+.brand{
+   display: flex;
+   justify-content: center;
+   min-height: 150px;
+}
+
+
+.brand a{
+    width: 20%;
+}
+
+.logoD{
+ width: 20%;
+ max-width: 450px;
+ min-width: 120px;
+
+}
+.logoD:hover{
+    animation: brandi 2s  ease-out;
+}
+
+@keyframes brandi {
+
+    20%{
+        transform: scale(1.2);
+    }
+
+}
+
+.logoa{
+    grid-area: h2;
+    width: 100%;
+    height: 100px;
+    margin-left: 1%;
+}
+
+
+
+.site_nav{
+    background: #08080800;
+    border: none;
+    grid-area: h3;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0.5em 0.5em -0.4em #ffffff;
+    transform: translateY(-0.55em);
+    transition: all 3s ease-in;
+   
+
+}
+
+.site_nav:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em #ffffff00;
+    transition: all 1s ease-in;
+
+
+
+}
+
+.menunav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.menunav a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.menunav a:hover{
+    color: #ffffffda;
+}
+
+
+
+/*headroom js */
+
+
+
+
+.header--fixed{
+    position: fixed;
+    z-index: 5;
+    right: 0;
+    left: 0;
+    top: 0px;
+}
+
+
+.headroom {
+    will-change: transform;
+    transition: transform  255ms ease-in-out 0s;
+}
+
+.headroom--pinned {
+    
+    transform: translateY(0%);
+}
+
+
+.headroom--unpinned {
+    transform: translateY(-100%);
+    transition: transform  1s ease-in-out;
+
+    
+}
+
+
+
+
+
+/*END headroom js*/ 
+
+
+
+
+
+/*menu + slider*/
+
+
+
+
+
+
+
+/* section grid */
+
+
+
+/* section title jobs*/
+.titletrabajos{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.counti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+
+.conttitle{
+   
+    display: block;
+    font-size: 2em;
+    font-family: comfort, Helvetica;
+    color:#ffffff;
+  
+    
+}
+
+.countline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.subctline{
+
+    width: 15%;
+    box-shadow: 0 0.5em 0.5em -0.4em #ffffff;
+    transition: all 5s ease-in;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 1%;
+}
+
+.subctline:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em #ffd900;
+   
+}
+
+.layoutgrid{
+    position: relative;
+    display: grid;
+    gap: 1%;
+    grid-template-areas:
+    "t1 t1 t2 t2 t2 t2"
+    "t1 t1 t2 t2 t2 t2"
+    "t3 t3 t3 t3 t5 t5"
+    "t3 t3 t3 t3 t5 t5"
+    "t6 t6 t6 t7 t7 t7"
+    "t6 t6 t6 t7 t7 t7"
+    ;
+    width: 100%;
+    height: 1200px;
+    z-index: 0;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 0;
+    overflow: hidden;
+
+  
+}
+
+
+.workscont{
+    background-image: linear-gradient(90deg, rgba(255, 234, 1, 0.363) 35%, rgba(255, 251, 0, 0) 100%);  
+    background-image: url(../images/backgradientyellow.svg);  
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+    justify-content: center;
+    align-items: center;
+}
+
+.titworks{
+    box-shadow: 0 0.5em 0.5em -0.4em #e2fb01;
+    transform: translateY(-0.25em);
+    transition: all 0.4s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: tt;
+    width: 100%;
+    display: block;
+
+    
+}
+    
+
+.sectitworks{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: #ffffff;
+   
+    
+}
+
+
+
+
+
+/* A content----------------------- */
+
+
+
+.container-a{
+
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    grid-area: t1 ;
+    position: relative;
+    
+
+}
+
+.subcontainer-a{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/Dami-siempre-yo.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t1;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.a{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: #e2fb01;
+
+   
+}
+
+.subcontainer-ahov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t1;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+}
+
+.subcontainer-ahov:hover{
+    width: 100%;
+    height:100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t1;
+    z-index: 2;
+
+    
+}
+
+.agrid{
+visibility: hidden;
+width: 100%;
+height: 95%;
+position: relative;
+display: grid;
+grid-template-areas:
+                     "ta1"
+                     "ta2"
+                     "ta3"
+                     "ta4"
+                     "ta5"                   
+;
+margin-left: 0%;
+margin-right: 0%;
+box-shadow: 0 0.5em 0.5em -0.4em #fbfcfac2;
+
+}
+
+.subcontainer-ahov:hover .agrid{
+
+    
+    visibility: visible;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+    transition: all 0.9s ease-in-out;
+    border-bottom-style: solid;
+    box-shadow: 0 0.5em 0.5em -0.3em #e3fc02;
+    }
+ 
+.ctea{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+   
+}
+
+.subcontainer-ahov:hover .ctea{
+
+    visibility: visible;
+
+    transition: all 0.4s ease;
+
+
+
+
+}
+
+.tap{
+
+    display: flex;
+    justify-content: center;
+    transition: all 0.8s ease-in-out 0.6s;
+
+}
+
+.tap:hover{
+    display: flex;
+    justify-content: center;
+
+}
+.tdap{
+    display: flex;
+    justify-content: center;
+    transition: all 0.4s ease 0.2s;
+    padding-bottom: 0%;
+    margin-top: 0;
+    color: #ffffff;
+
+}
+
+.logoania{
+    width: 100%;
+    height: 12vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.subcontainer-ahov:hover .logoania{
+
+    grid-area: ta1;
+    visibility: visible;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+
+}
+
+.title-a{
+    color: #ffffff;
+    width: 0;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    padding-top: 100%;
+
+
+}
+
+.subcontainer-ahov:hover .title-a{
+
+    grid-area: ta4;
+
+    visibility: visible;
+    width: 100%;
+    padding-top: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.subcontainer-ahov:hover .subtitle-a{
+
+    grid-area: ta5;
+    visibility: visible;
+    width: 100%;
+    padding-top: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    display: block;
+    
+}
+
+.sublinea{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+
+    color: white;
+
+}
+.subcontainer-ahov:hover .sublinea{
+
+    grid-area: ta5;
+    visibility: hidden;
+    width: 100%;
+
+    padding-top: 5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.subcontainer-ahov:hover .subsublinea{
+
+    grid-area: ta5;
+    visibility: visible;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transition: all 0.9s ease-in-out;
+    border-bottom-style: solid;
+    box-shadow: 0 0.5em 0.5em -0.4em #e3fc02;
+
+}
+
+
+.contplaga{
+  
+  grid-area: ta3;
+  display: flex;
+  justify-content: center;
+}
+
+.playloga{
+    
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    visibility: hidden;
+    width: 0;
+
+    
+
+    
+
+}
+.subcontainer-ahov:hover .playloga{
+    visibility: visible;
+    padding-bottom: 0%;
+    width: 50px;
+
+
+}
+
+
+
+
+
+
+
+/* B content----------------------- */
+
+
+
+
+ .cont-b{
+
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    grid-area: t2;
+    position: relative;
+
+    
+
+}
+
+.subcont-b{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/MUFA-Infiernillo.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t2;
+    z-index: 1;
+    overflow: hidden;
+
+
+
+}
+
+.bgrid{
+    width: 100%;
+    height:100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+                         "ta6 ta4 ta4 ta7"
+                         "ta6 ta4 ta4 ta7"
+                         "ta1 ta1 ta8 ta3"
+                         "ta1 ta1 ta8 ta3"
+    ;
+
+}
+.b{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+   
+}
+
+.subcont-bhov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t2;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+
+    
+
+
+}
+
+.subcont-bhov:hover{
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t2;
+    z-index: 2;
+   
+    
+}
+
+.cteb{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    
+    
+    
+}
+
+.subcont-bhov:hover .cteb{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    
+
+}
+
+.tbp{
+    color: #ffffff;
+    width: 100%;
+    transition: all 0.1s ease-in-out;
+   
+}
+
+.tbp:hover{
+    width: 100%;
+}
+
+.tdbp{
+    color: #ffffff;
+    width: 100%;
+    font-family: comfort;
+
+
+
+}
+
+
+.tdbp:hover{
+  
+    width: 100%;
+    
+
+
+}
+
+.contlnib{
+    position: relative;
+    width: 100%;
+    grid-area: ta4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoanib{
+    grid-area: ta4;
+    width: 100%;
+    height: 60%;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.subcont-bhov:hover .logoanib{
+    
+
+    
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.contcopyb{
+
+    position: relative;
+    width: 100%;
+    grid-area: ta1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.copyb{
+
+
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+    padding-left: 15%;
+
+  
+
+}
+
+.subcont-bhov:hover .copyb{
+    visibility: visible;
+    width: 100%;
+    position: absolute;
+    
+
+}
+
+.contplayb{
+    position: relative;
+    grid-area: ta3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.playlogb{
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    width: 100%;  
+    height: 25%;
+
+    display: block;
+    visibility: hidden;
+    margin: 0;
+    position: absolute;
+   
+
+}
+
+.subcont-bhov:hover .playlogb{
+    visibility: visible;
+    position: absolute;
+    width: 50px;
+    margin: 0;
+   
+    transition: all 0.1s ease-in-out;
+
+
+
+}
+
+.clo.b{
+    color:#ffffff;
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+/* C content */
+
+
+
+.cont-c{
+
+    display: flex;
+    z-index: 8;
+    justify-content: center;
+    align-items: center;
+    grid-area: t3;
+    position: relative;  
+
+}
+
+
+.subcont-c{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/jovenes-black.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t3;
+    z-index: 1;
+    overflow: hidden;
+
+
+
+}
+
+.cgrid{
+    width: 100%;
+    height:100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+                         "ta6 ta4 ta4 ta7"
+                         "ta6 ta4 ta4 ta7"
+                         "ta1 ta1 ta8 ta3"
+                         "ta1 ta1 ta8 ta3"
+    ;
+
+}
+.c{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+   
+}
+
+.subcont-chov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t3;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+
+    
+
+
+}
+
+.subcont-chov:hover{
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t3;
+    z-index: 2;
+   
+    
+}
+
+
+.ctec{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    
+    
+    
+}
+
+
+.subcont-chov:hover .ctec{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    
+
+}
+
+
+.tcp{
+    color: #ffffff;
+    width: 100%;
+    transition: all 0.1s ease-in-out;
+   
+}
+
+.tcp:hover{
+    width: 100%;
+}
+
+.tdcp{
+    color: #ffffff;
+    width: 100%;
+    font-family: comfort;
+
+
+
+}
+
+
+.tdcp:hover{
+  
+    width: 100%;
+    
+
+
+}
+
+.contlnic{
+    position: relative;
+    width: 100%;
+    grid-area: ta4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoanic{
+    grid-area: ta4;
+    width: 100%;
+    height: 60%;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.subcont-chov:hover .logoanic{
+    
+
+    
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.contcopyc{
+
+    position: relative;
+    width: 100%;
+    grid-area: ta1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.copyc{
+
+
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+    padding-left: 15%;
+
+  
+
+}
+
+
+.subcont-chov:hover .copyc{
+    visibility: visible;
+    width: 100%;
+    position: absolute;
+    
+
+}
+.contplay{
+    position: relative;
+    grid-area: ta3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.playlogc{
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    width: 100%;  
+    height: 25%;
+
+    display: block;
+    visibility: hidden;
+    margin: 0;
+    position: absolute;
+   
+
+}
+
+.subcont-chov:hover .playlogc{
+    visibility: visible;
+    position: absolute;
+    width: 50px;
+    margin: 0;
+   
+    transition: all 0.1s ease-in-out;
+
+
+
+}
+
+
+
+.clo.c{
+    color:#ffffff;
+    width: 70%;
+}
+
+
+
+
+
+/* D content product
+
+
+
+
+.container-d{
+
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    grid-area: t4;
+    position: relative;
+    
+
+}
+
+
+
+
+.subcontainer-d{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/img.png);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t4;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.d{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+   
+}
+
+.subcontainer-dhov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t4;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+}
+
+
+.subcontainer-dhov:hover{
+    width: 100%;
+    height:100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t4;
+    z-index: 2;
+
+    
+}
+
+
+.cted{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+
+    
+}
+
+
+.subcontainer-dhov:hover .cted{
+
+    visibility: visible;
+
+    transition: all 0.4s ease;
+
+
+}
+
+
+
+.tdp{
+
+    display: flex;
+    justify-content: center;
+    transition: all 0.8s ease-in-out 0.6s;
+
+}
+
+.tdp:hover{
+    display: flex;
+    justify-content: center;
+
+}
+.tddp{
+    display: flex;
+    justify-content: center;
+    transition: all 0.4s ease 0.2s;
+    padding-bottom: 5%;
+
+}
+
+
+
+
+.logoanid{
+    width: 100%;
+    height: 130px;
+    padding-top: 20px;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.subcontainer-dhov:hover .logoanid{
+
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+    margin-top: 0%;
+
+
+}
+
+
+.title-d{
+    color: #ffffff;
+    width: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    padding-top: 100%;
+
+
+}
+
+.subcontainer-dhov:hover .title-d{
+
+    visibility: visible;
+    width: 60%;
+    padding-top: 45%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    display: block;
+    transition: all 0.9s ease-in-out;
+    border-bottom-style: solid;
+    box-shadow: 0 0.5em 0.5em -0.4em #e3fc02;
+
+
+
+   
+
+}
+
+.playlog{
+    
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    width: 0%;
+    height: 60px;
+    display: block;
+    visibility: hidden;
+    margin-left: 40%;
+    
+
+    
+
+}
+.subcontainer-dhov:hover .playlog{
+    visibility: visible;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15%;
+}
+
+
+ */
+
+
+
+
+.container-d{
+
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    grid-area: t5 ;
+    position: relative;
+    
+
+}
+
+
+
+
+.subcontainer-d{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/Manas.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t5;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.d{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+   
+}
+
+.subcontainer-dhov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t5;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+}
+
+
+.subcontainer-dhov:hover{
+    width: 100%;
+    height:100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t5;
+    z-index: 2;
+
+    
+}
+
+.dgrid{
+visibility: hidden;
+width: 100%;
+height: 95%;
+position: relative;
+display: grid;
+grid-template-areas:
+                     "ta1"
+                     "ta2"
+                     "ta3"
+                     "ta4"
+                     "ta5"                   
+;
+margin-left: 0%;
+margin-right: 0%;
+box-shadow: 0 0.5em 0.5em -0.4em #fbfcfac2;
+
+}
+
+.subcontainer-dhov:hover .dgrid{
+
+    
+    visibility: visible;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+    transition: all 0.9s ease-in-out;
+    border-bottom-style: solid;
+    box-shadow: 0 0.5em 0.5em -0.3em #e3fc02;
+    }
+
+  
+.cted{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+   
+}
+
+
+.subcontainer-dhov:hover .cted{
+
+    visibility: visible;
+
+    transition: all 0.4s ease;
+
+
+
+
+}
+
+
+
+.tdp{
+
+    display: flex;
+    justify-content: center;
+    transition: all 0.8s ease-in-out 0.6s;
+
+}
+
+.tdp:hover{
+    display: flex;
+    justify-content: center;
+
+}
+.tddp{
+    display: flex;
+    justify-content: center;
+    transition: all 0.4s ease 0.2s;
+    padding-bottom: 0%;
+    margin-top: 0;
+    color: #ffffff;
+
+}
+
+.logoanid{
+    width: 100%;
+    height: 12vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.subcontainer-dhov:hover .logoanid{
+
+    grid-area: ta1;
+    visibility: visible;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+
+}
+
+
+.title-d{
+    color: #ffffff;
+    width: 0;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    padding-top: 100%;
+
+
+}
+
+.subcontainer-dhov:hover .title-d{
+
+    grid-area: ta4;
+
+    visibility: visible;
+    width: 100%;
+    padding-top: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.subcontainer-dhov:hover .subtitle-d{
+
+    grid-area: ta5;
+    visibility: visible;
+    width: 100%;
+    padding-top: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    display: block;
+    
+}
+
+.sublined{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+
+    color: white;
+
+}
+.subcontainer-dhov:hover .sublined{
+
+    grid-area: ta5;
+    visibility: hidden;
+    width: 100%;
+
+    padding-top: 5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.subcontainer-dhov:hover .subsublined{
+
+    grid-area: ta5;
+    visibility: visible;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transition: all 0.9s ease-in-out;
+    border-bottom-style: solid;
+    box-shadow: 0 0.5em 0.5em -0.4em #e3fc02;
+
+}
+
+
+.contplagd{
+  
+  grid-area: ta3;
+  display: flex;
+  justify-content: center;
+}
+
+.playlogd{
+    
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    visibility: hidden;
+    width: 0;
+
+    
+
+    
+
+}
+.subcontainer-dhov:hover .playlogd{
+    visibility: visible;
+    padding-bottom: 0%;
+    width: 50px;
+
+
+}
+
+
+
+
+
+/* E content */
+
+
+.cont-e{
+
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    grid-area: t6;
+    position: relative;
+
+    
+
+}
+
+
+.subcont-e{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/street.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t6;
+    z-index: 1;
+    overflow: hidden;
+
+
+
+}
+
+.egrid{
+    width: 100%;
+    height:100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+                         "ta6 ta4 ta4 ta7"
+                         "ta6 ta4 ta4 ta7"
+                         "ta1 ta1 ta8 ta3"
+                         "ta1 ta1 ta8 ta3"
+    ;
+
+}
+.e{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+   
+}
+
+.subcont-ehov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t6;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+
+    
+
+
+}
+
+.subcont-ehov:hover{
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t6;
+    z-index: 2;
+   
+    
+}
+
+
+.ctee{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    
+    
+    
+}
+
+
+.subcont-ehov:hover .ctee{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    
+
+}
+
+
+.tep{
+    color: #ffffff;
+    width: 100%;
+    transition: all 0.1s ease-in-out;
+   
+}
+
+.tep:hover{
+    width: 100%;
+}
+
+.tdep{
+    color: #ffffff;
+    width: 100%;
+    font-family: comfort;
+
+
+
+}
+
+
+.tdep:hover{
+  
+    width: 100%;
+    
+
+
+}
+
+.contlnie{
+    position: relative;
+    width: 100%;
+    grid-area: ta4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoanie{
+    grid-area: ta4;
+    width: 100%;
+    height: 60%;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.subcont-ehov:hover .logoanie{
+    
+
+    
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+.contcopye{
+
+    position: relative;
+    width: 100%;
+    grid-area: ta1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+.copye{
+
+
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+    padding-left: 15%;
+
+  
+
+}
+
+
+.subcont-ehov:hover .copye{
+    visibility: visible;
+    width: 100%;
+    position: absolute;
+    
+
+}
+
+
+.contplaye{
+    position: relative;
+    grid-area: ta3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.playloge{
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    width: 100%;  
+    height: 25%;
+
+    display: block;
+    visibility: hidden;
+    margin: 0;
+    position: absolute;
+   
+
+}
+
+.subcont-ehov:hover .playloge{
+    visibility: visible;
+    position: absolute;
+    width: 50px;
+    margin: 0;
+   
+    transition: all 0.1s ease-in-out;
+
+
+
+}
+
+
+.clo.e{
+    color:#ffffff;
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+/* F content */
+ 
+
+
+.cont-f{
+
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    grid-area: t7;
+    position: relative;
+
+    
+
+}
+
+
+.subcont-f{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/light.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t7;
+    z-index: 1;
+    overflow: hidden;
+
+
+
+}
+
+.fgrid{
+    width: 100%;
+    height:100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+                         "ta6 ta4 ta4 ta7"
+                         "ta6 ta4 ta4 ta7"
+                         "ta1 ta1 ta8 ta3"
+                         "ta1 ta1 ta8 ta3"
+    ;
+
+}
+.f{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+   
+}
+
+.subcont-fhov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t7;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+
+    
+
+
+}
+
+.subcont-fhov:hover{
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t7;
+    z-index: 2;
+   
+    
+}
+
+
+.ctef{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    
+    
+    
+}
+
+
+.subcont-fhov:hover .ctef{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    
+
+}
+
+
+.tfp{
+    color: #ffffff;
+    width: 100%;
+    transition: all 0.1s ease-in-out;
+   
+}
+
+.tfp:hover{
+    width: 100%;
+}
+
+.tdfp{
+    color: #ffffff;
+    width: 100%;
+    font-family: comfort;
+
+
+
+}
+
+
+.tdfp:hover{
+  
+    width: 100%;
+    
+
+
+}
+
+.contlnif{
+    position: relative;
+    width: 100%;
+    grid-area: ta4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoanif{
+    grid-area: ta4;
+    width: 100%;
+    height: 60%;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.subcont-fhov:hover .logoanif{
+    
+
+    
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+.contcopyf{
+
+    position: relative;
+    width: 100%;
+    grid-area: ta1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+.copyf{
+
+
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+    padding-left: 15%;
+
+  
+
+}
+
+
+.subcont-fhov:hover .copyf{
+    visibility: visible;
+    width: 100%;
+    position: absolute;
+    
+
+}
+
+
+.contplayf{
+    position: relative;
+    grid-area: ta3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.playlogf{
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    width: 100%;  
+    height: 25%;
+
+    display: block;
+    visibility: hidden;
+    margin: 0;
+    position: absolute;
+   
+
+}
+
+
+.subcont-fhov:hover .playlogf{
+    visibility: visible;
+    position: absolute;
+    width: 50px;
+    margin: 0;
+   
+    transition: all 0.1s ease-in-out;
+
+
+
+}
+
+
+
+.clo.f{
+    color:#ffffff;
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+/*modal contents*/
+
+
+    
+.modal{
+  
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0%;
+    
+}
+
+.modal-content{
+    max-height: 70vh;
+    padding: 0;
+    margin: 0;
+    background-color: #050505;
+}
+
+.btn.modal-close{
+    text-transform: capitalize;
+    color:#ffffff;
+}
+
+.ifrab{
+   background-color: #fbe801;
+    width: 100%;
+    height:60vh;
+     
+}
+
+
+.modal-footer col{
+    background-color: #ec0c7c;
+    text-align: center;
+}
+
+.botnnab{
+    width: 100%;
+    display: inline;
+    padding: 20px;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.botnnab:hover,
+.botnnab:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #fbe801;
+  transform: translateY(-0.25em);
+  transition: all 0.4s ease-in;
+
+}
+
+.ifra{
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---SECTION STREAMING-------*/
+
+
+
+
+
+
+
+
+.streaminggrid{
+    position: relative;
+    display: grid;
+
+    gap: 2%;
+    grid-template-areas:
+    "t1 t1 t2 t2 t2 t2"
+    "t1 t1 t2 t2 t2 t2"
+    "t3 t3 t3 t3 t5 t5"
+    "t3 t3 t3 t3 t5 t5"
+  
+    ;
+    width: 100%;
+    height: 800px;
+    z-index: 0;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 0;
+    margin-bottom: 10%;
+    overflow: hidden;
+
+  
+}
+
+
+/*--- ST A -------*/
+
+
+.stcontainer-a{
+
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    grid-area: t1 ;
+    position: relative;
+    
+
+}
+
+.stsubcontainer-a{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/Cypher.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t1;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.sta{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: #e2fb01;
+
+   
+}
+
+.stsubcontainer-ahov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t1;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+}
+
+.stsubcontainer-ahov:hover{
+    width: 100%;
+    height:100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t1;
+    z-index: 2;
+
+    
+}
+
+.stagrid{
+visibility: hidden;
+width: 100%;
+height: 95%;
+position: relative;
+display: grid;
+grid-template-areas:
+                     "ta1"
+                     "ta2"
+                     "ta3"
+                     "ta4"
+                     "ta5"                   
+;
+margin-left: 0%;
+margin-right: 0%;
+box-shadow: 0 0.5em 0.5em -0.4em #fbfcfac2;
+
+}
+
+.stsubcontainer-ahov:hover .stagrid{
+
+    
+    visibility: visible;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+    transition: all 0.9s ease-in-out;
+    border-bottom-style: solid;
+    box-shadow: 0 0.5em 0.5em -0.3em #e3fc02;
+    }
+ 
+.stctea{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+   
+}
+
+.stsubcontainer-ahov:hover .stctea{
+
+    visibility: visible;
+
+    transition: all 0.4s ease;
+
+
+}
+
+.sttap{
+
+    display: flex;
+    justify-content: center;
+    transition: all 0.8s ease-in-out 0.6s;
+
+}
+
+.sttap:hover{
+    display: flex;
+    justify-content: center;
+
+}
+.sttdap{
+    display: flex;
+    justify-content: center;
+    transition: all 0.4s ease 0.2s;
+    padding-bottom: 0%;
+    margin-top: 0;
+    color: #ffffff;
+
+}
+
+.stlogoania{
+    width: 100%;
+    height: 12vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.stsubcontainer-ahov:hover .stlogoania{
+
+    grid-area: ta1;
+    visibility: visible;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+
+}
+
+.sttitle-a{
+    color: #ffffff;
+    width: 0;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    padding-top: 100%;
+
+
+}
+
+.stsubcontainer-ahov:hover .sttitle-a{
+
+    grid-area: ta4;
+
+    visibility: visible;
+    width: 100%;
+    padding-top: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.stsubcontainer-ahov:hover .stsubtitle-a{
+
+    grid-area: ta5;
+    visibility: visible;
+    width: 100%;
+    padding-top: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    display: block;
+    
+}
+
+.stsublinea{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+
+    color: white;
+
+}
+.stsubcontainer-ahov:hover .stsublinea{
+
+    grid-area: ta5;
+    visibility: hidden;
+    width: 100%;
+
+    padding-top: 5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.stsubcontainer-ahov:hover .stsubsublinea{
+
+    grid-area: ta5;
+    visibility: visible;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transition: all 0.9s ease-in-out;
+    border-bottom-style: solid;
+    box-shadow: 0 0.5em 0.5em -0.4em #e3fc02;
+
+}
+
+
+.stcontplaga{
+  
+  grid-area: ta3;
+  display: flex;
+  justify-content: center;
+}
+
+.stplayloga{
+    
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    visibility: hidden;
+    width: 0;
+
+    
+
+    
+
+}
+.stsubcontainer-ahov:hover .stplayloga{
+    visibility: visible;
+    padding-bottom: 0%;
+    width: 50px;
+
+
+}
+
+
+
+
+
+/*--- ST b -------*/
+
+
+
+
+.stcont-b{
+
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    grid-area: t2;
+    position: relative;
+
+    
+
+}
+
+.stsubcont-b{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/CypherVol3.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t2;
+    z-index: 1;
+    overflow: hidden;
+
+
+
+}
+
+.stbgrid{
+    width: 100%;
+    height:100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+                         "ta6 ta4 ta4 ta7"
+                         "ta6 ta4 ta4 ta7"
+                         "ta1 ta1 ta8 ta3"
+                         "ta1 ta1 ta8 ta3"
+    ;
+
+}
+.stb{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+   
+}
+
+.stsubcont-bhov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t2;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+
+    
+
+
+}
+
+.stsubcont-bhov:hover{
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t2;
+    z-index: 2;
+   
+    
+}
+
+.stcteb{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    
+    
+    
+}
+
+.stsubcont-bhov:hover .stcteb{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    
+
+}
+
+.sttbp{
+    color: #ffffff;
+    width: 100%;
+    transition: all 0.1s ease-in-out;
+   
+}
+
+.sttbp:hover{
+    width: 100%;
+}
+
+.sttdbp{
+    color: #ffffff;
+    width: 100%;
+    font-family: comfort;
+
+}
+
+.sttdbp:hover{
+  
+    width: 100%;
+    
+}
+
+.stcontlnib{
+    position: relative;
+    width: 100%;
+    grid-area: ta4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stlogoanib{
+    grid-area: ta4;
+    width: 100%;
+    height: 60%;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.stsubcont-bhov:hover .stlogoanib{
+
+    
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.stcontcopyb{
+
+    position: relative;
+    width: 100%;
+    grid-area: ta1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.stcopyb{
+
+
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+    padding-left: 15%;
+
+  
+
+}
+
+.stsubcont-bhov:hover .stcopyb{
+    visibility: visible;
+    width: 100%;
+    position: absolute;
+    
+
+}
+
+.stcontplayb{
+    position: relative;
+    grid-area: ta3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.stplaylogb{
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    width: 100%;  
+    height: 25%;
+
+    display: block;
+    visibility: hidden;
+    margin: 0;
+    position: absolute;
+   
+
+}
+
+.stsubcont-bhov:hover .stplaylogb{
+    visibility: visible;
+    position: absolute;
+    width: 50px;
+    margin: 0;
+   
+    transition: all 0.1s ease-in-out;
+
+
+
+}
+
+.stclo.stb{
+    color:#ffffff;
+    width: 70%;
+}
+
+
+
+
+
+
+/*--- ST C -------*/
+
+
+
+
+
+
+
+.stcont-c{
+
+    display: flex;
+    z-index: 8;
+    justify-content: center;
+    align-items: center;
+    grid-area: t3;
+    position: relative;  
+
+}
+
+
+.stsubcont-c{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/Paco-Cru.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t3;
+    z-index: 1;
+    overflow: hidden;
+
+
+
+}
+
+.stcgrid{
+    width: 100%;
+    height:100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+                         "ta6 ta4 ta4 ta7"
+                         "ta6 ta4 ta4 ta7"
+                         "ta1 ta1 ta8 ta3"
+                         "ta1 ta1 ta8 ta3"
+    ;
+
+}
+.stc{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+   
+}
+
+.stsubcont-chov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t3;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+
+    
+
+
+}
+
+.stsubcont-chov:hover{
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t3;
+    z-index: 2;
+   
+    
+}
+
+
+.stctec{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    
+    
+    
+}
+
+
+.stsubcont-chov:hover .stctec{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    
+
+}
+
+
+.sttcp{
+    color: #ffffff;
+    width: 100%;
+    transition: all 0.1s ease-in-out;
+   
+}
+
+.sttcp:hover{
+    width: 100%;
+}
+
+.sttdcp{
+    color: #ffffff;
+    width: 100%;
+    font-family: comfort;
+
+
+
+}
+
+
+.sttdcp:hover{
+  
+    width: 100%;
+    
+
+
+}
+
+.stcontlnic{
+    position: relative;
+    width: 100%;
+    grid-area: ta4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stlogoanic{
+    grid-area: ta4;
+    width: 100%;
+    height: 60%;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.stsubcont-chov:hover .stlogoanic{
+    
+
+    
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.stcontcopyc{
+
+    position: relative;
+    width: 100%;
+    grid-area: ta1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.stcopyc{
+
+
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+    padding-left: 15%;
+
+  
+
+}
+
+
+.stsubcont-chov:hover .stcopyc{
+    visibility: visible;
+    width: 100%;
+    position: absolute;
+    
+
+}
+.stcontplay{
+    position: relative;
+    grid-area: ta3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.stplaylogc{
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    width: 100%;  
+    height: 25%;
+
+    display: block;
+    visibility: hidden;
+    margin: 0;
+    position: absolute;
+   
+
+}
+
+.stsubcont-chov:hover .stplaylogc{
+    visibility: visible;
+    position: absolute;
+    width: 50px;
+    margin: 0;
+   
+    transition: all 0.1s ease-in-out;
+
+
+
+}
+
+
+
+.stclo.stc{
+    color:#ffffff;
+    width: 70%;
+}
+
+
+
+/*------------ST D-------------*/
+
+
+
+.stcontainer-d{
+
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    grid-area: t5 ;
+    position: relative;
+    
+
+}
+
+
+
+
+.stsubcontainer-d{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/guitar.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t5;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.std{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+   
+}
+
+.stsubcontainer-dhov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t5;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+}
+
+
+.stsubcontainer-dhov:hover{
+    width: 100%;
+    height:100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t5;
+    z-index: 2;
+
+    
+}
+
+.stdgrid{
+visibility: hidden;
+width: 100%;
+height: 95%;
+position: relative;
+display: grid;
+grid-template-areas:
+                     "ta1"
+                     "ta2"
+                     "ta3"
+                     "ta4"
+                     "ta5"                   
+;
+margin-left: 0%;
+margin-right: 0%;
+box-shadow: 0 0.5em 0.5em -0.4em #fbfcfac2;
+
+}
+
+.stsubcontainer-dhov:hover .stdgrid{
+
+    
+    visibility: visible;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+    transition: all 0.9s ease-in-out;
+    border-bottom-style: solid;
+    box-shadow: 0 0.5em 0.5em -0.3em #e3fc02;
+    }
+
+
+    
+.stcted{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+   
+}
+
+
+.stsubcontainer-dhov:hover .stcted{
+
+    visibility: visible;
+
+    transition: all 0.4s ease;
+
+
+
+
+}
+
+
+
+.sttdp{
+
+    display: flex;
+    justify-content: center;
+    transition: all 0.8s ease-in-out 0.6s;
+
+}
+
+.sttdp:hover{
+    display: flex;
+    justify-content: center;
+
+}
+.sttddp{
+    display: flex;
+    justify-content: center;
+    transition: all 0.4s ease 0.2s;
+    padding-bottom: 0%;
+    margin-top: 0;
+    color: #ffffff;
+
+}
+
+
+
+
+.stlogoanid{
+    width: 100%;
+    height: 12vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+.stsubcontainer-dhov:hover .stlogoanid{
+
+    grid-area: ta1;
+    visibility: visible;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+
+}
+
+
+.sttitle-d{
+    color: #ffffff;
+    width: 0;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    padding-top: 100%;
+
+
+}
+
+.stsubcontainer-dhov:hover .sttitle-d{
+
+    grid-area: ta4;
+
+    visibility: visible;
+    width: 100%;
+    padding-top: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.stsubcontainer-dhov:hover .stsubtitle-d{
+
+    grid-area: ta5;
+    visibility: visible;
+    width: 100%;
+    padding-top: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    display: block;
+    
+}
+
+.stsublined{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+
+    color: white;
+
+}
+.stsubcontainer-dhov:hover .stsublined{
+
+    grid-area: ta5;
+    visibility: hidden;
+    width: 100%;
+
+    padding-top: 5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.stsubcontainer-dhov:hover .stsubsublined{
+
+    grid-area: ta5;
+    visibility: visible;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transition: all 0.9s ease-in-out;
+    border-bottom-style: solid;
+    box-shadow: 0 0.5em 0.5em -0.4em #e3fc02;
+
+}
+
+
+.stcontplagd{
+  
+  grid-area: ta3;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.stplaylogd{
+    
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    visibility: hidden;
+    width: 0;
+
+    
+
+    
+
+}
+.stsubcontainer-dhov:hover .stplaylogd{
+    visibility: visible;
+    padding-bottom: 0%;
+    width: 50px;
+
+
+}
+
+
+
+
+
+
+#botb{
+    display: none;
+}
+
+
+
+#botc{
+    display: none;
+}
+
+
+#botd{
+    display: none;
+}
+
+
+
+/*---SECTION PUBLICIDAD-------*/
+
+.pugrid{
+    position: relative;
+    display: grid;
+    gap:2%;
+    grid-template-areas:
+    "t1 t1 t2 t2 t2 t2"
+    "t1 t1 t2 t2 t2 t2"
+    "t3 t3 t3 t3 t5 t5"
+    "t3 t3 t3 t3 t5 t5"
+  
+    ;
+    width: 100%;
+    height: 800px;
+    z-index: 0;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 0;
+    margin-bottom: 10%;
+    overflow: hidden;
+
+  
+}
+
+
+/*--- PU A -------*/
+
+
+.pucontainer-a{
+
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    grid-area: t1 ;
+    position: relative;
+    
+
+}
+
+.pusubcontainer-a{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/is2.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t1;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.pua{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: #e2fb01;
+
+   
+}
+
+.pusubcontainer-ahov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t1;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+}
+
+.pusubcontainer-ahov:hover{
+    width: 100%;
+    height:100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t1;
+    z-index: 2;
+
+    
+}
+
+.puagrid{
+visibility: hidden;
+width: 100%;
+height: 95%;
+position: relative;
+display: grid;
+grid-template-areas:
+                     "ta1"
+                     "ta2"
+                     "ta3"
+                     "ta4"
+                     "ta5"                   
+;
+margin-left: 0%;
+margin-right: 0%;
+box-shadow: 0 0.5em 0.5em -0.4em #fbfcfac2;
+
+}
+
+.pusubcontainer-ahov:hover .puagrid{
+
+    
+    visibility: visible;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+    transition: all 0.9s ease-in-out;
+    border-bottom-style: solid;
+    box-shadow: 0 0.5em 0.5em -0.3em #e3fc02;
+    }
+ 
+.puctea{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+   
+}
+
+.pusubcontainer-ahov:hover .puctea{
+
+    visibility: visible;
+
+    transition: all 0.4s ease;
+
+
+}
+
+.putap{
+
+    display: flex;
+    justify-content: center;
+    transition: all 0.8s ease-in-out 0.6s;
+
+}
+
+.putap:hover{
+    display: flex;
+    justify-content: center;
+
+}
+.putdap{
+    display: flex;
+    justify-content: center;
+    transition: all 0.4s ease 0.2s;
+    padding-bottom: 0%;
+    margin-top: 0;
+    color: #ffffff;
+
+}
+
+.pulogoania{
+    width: 100%;
+    height: 12vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.pusubcontainer-ahov:hover .pulogoania{
+
+    grid-area: ta1;
+    visibility: visible;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+
+}
+
+.putitle-a{
+    color: #ffffff;
+    width: 0;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    padding-top: 100%;
+
+
+}
+
+.pusubcontainer-ahov:hover .putitle-a{
+
+    grid-area: ta4;
+
+    visibility: visible;
+    width: 100%;
+    padding-top: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.pusubcontainer-ahov:hover .pusubtitle-a{
+
+    grid-area: ta5;
+    visibility: visible;
+    width: 100%;
+    padding-top: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    display: block;
+    
+}
+
+.pusublinea{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+
+    color: white;
+
+}
+.pusubcontainer-ahov:hover .pusublinea{
+
+    grid-area: ta5;
+    visibility: hidden;
+    width: 100%;
+    padding-top: 5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.pusubcontainer-ahov:hover .pusubsublinea{
+
+    grid-area: ta5;
+    visibility: visible;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transition: all 0.9s ease-in-out;
+    border-bottom-style: solid;
+    box-shadow: 0 0.5em 0.5em -0.4em #e3fc02;
+
+}
+
+
+.pucontplaga{
+  
+  grid-area: ta3;
+  display: flex;
+  justify-content: center;
+}
+
+.puplayloga{
+    
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    visibility: hidden;
+    width: 0;
+
+    
+
+    
+
+}
+.pusubcontainer-ahov:hover .puplayloga{
+    visibility: visible;
+    padding-bottom: 0%;
+    width: 50px;
+
+
+}
+
+
+
+
+/*--- PU b -------*/
+
+
+
+
+.pucont-b{
+
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    grid-area: t2;
+    position: relative;
+
+    
+
+}
+
+.pusubcont-b{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/fashion.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t2;
+    z-index: 1;
+    overflow: hidden;
+
+
+
+}
+
+.pubgrid{
+    width: 100%;
+    height:100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+                         "ta6 ta4 ta4 ta7"
+                         "ta6 ta4 ta4 ta7"
+                         "ta1 ta1 ta8 ta3"
+                         "ta1 ta1 ta8 ta3"
+    ;
+
+}
+.pub{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+   
+}
+
+.pusubcont-bhov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t2;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+
+    
+
+
+}
+
+.pusubcont-bhov:hover{
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t2;
+    z-index: 2;
+   
+    
+}
+
+.pucteb{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    
+    
+    
+}
+
+.pusubcont-bhov:hover .pucteb{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    
+
+}
+
+.putbp{
+    color: #ffffff;
+    width: 100%;
+    transition: all 0.1s ease-in-out;
+   
+}
+
+.putbp:hover{
+    width: 100%;
+}
+
+.putdbp{
+    color: #ffffff;
+    width: 100%;
+    font-family: comfort;
+
+}
+
+.putdbp:hover{
+  
+    width: 100%;
+    
+}
+
+.pucontlnib{
+    position: relative;
+    width: 100%;
+    grid-area: ta4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pulogoanib{
+    grid-area: ta4;
+    width: 100%;
+    height: 60%;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.pusubcont-bhov:hover .pulogoanib{
+
+    
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.pucontcopyb{
+
+    position: relative;
+    width: 100%;
+    grid-area: ta1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.pucopyb{
+
+
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+    padding-left: 15%;
+
+  
+
+}
+
+.pusubcont-bhov:hover .pucopyb{
+    visibility: visible;
+    width: 100%;
+    position: absolute;
+    
+
+}
+
+.pucontplayb{
+    position: relative;
+    grid-area: ta3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.puplaylogb{
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    width: 100%;  
+    height: 25%;
+
+    display: block;
+    visibility: hidden;
+    margin: 0;
+    position: absolute;
+   
+
+}
+
+.pusubcont-bhov:hover .puplaylogb{
+    visibility: visible;
+    position: absolute;
+    width: 50px;
+    margin: 0;
+   
+    transition: all 0.1s ease-in-out;
+
+
+
+}
+
+.puclo.pub{
+    color:#ffffff;
+    width: 70%;
+}
+
+
+
+
+
+
+
+/*--- PU C -------*/
+
+
+
+.pucont-c{
+
+    display: flex;
+    z-index: 8;
+    justify-content: center;
+    align-items: center;
+    grid-area: t3;
+    position: relative;  
+
+}
+
+
+.pusubcont-c{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/is3.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t3;
+    z-index: 1;
+    overflow: hidden;
+
+
+
+}
+
+.pucgrid{
+    width: 100%;
+    height:100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+                         "ta6 ta4 ta4 ta7"
+                         "ta6 ta4 ta4 ta7"
+                         "ta1 ta1 ta8 ta3"
+                         "ta1 ta1 ta8 ta3"
+    ;
+
+}
+.puc{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+   
+}
+
+.pusubcont-chov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t3;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+
+    
+
+
+}
+
+.pusubcont-chov:hover{
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t3;
+    z-index: 2;
+   
+    
+}
+
+
+.puctec{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    
+    
+    
+}
+
+
+.pusubcont-chov:hover .puctec{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    
+
+}
+
+
+.putcp{
+    color: #ffffff;
+    width: 100%;
+    transition: all 0.1s ease-in-out;
+   
+}
+
+.putcp:hover{
+    width: 100%;
+}
+
+.putdcp{
+    color: #ffffff;
+    width: 100%;
+    font-family: comfort;
+
+
+
+}
+
+
+.putdcp:hover{
+  
+    width: 100%;
+    
+
+
+}
+
+.pucontlnic{
+    position: relative;
+    width: 100%;
+    grid-area: ta4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pulogoanic{
+    grid-area: ta4;
+    width: 100%;
+    height: 60%;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.pusubcont-chov:hover .pulogoanic{
+    
+
+    
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.pucontcopyc{
+
+    position: relative;
+    width: 100%;
+    grid-area: ta1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.pucopyc{
+
+
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+    padding-left: 15%;
+
+  
+
+}
+
+
+.pusubcont-chov:hover .pucopyc{
+    visibility: visible;
+    width: 100%;
+    position: absolute;
+    
+
+}
+.pucontplayc{
+    position: relative;
+    grid-area: ta3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.puplaylogc{
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    width: 100%;  
+    height: 25%;
+
+    display: block;
+    visibility: hidden;
+    margin: 0;
+    position: absolute;
+   
+
+}
+
+.pusubcont-chov:hover .puplaylogc{
+    visibility: visible;
+    position: absolute;
+    width: 50px;
+    margin: 0;
+   
+    transition: all 0.1s ease-in-out;
+
+
+
+}
+
+
+
+.puclo.puc{
+    color:#ffffff;
+    width: 70%;
+}
+
+
+
+
+
+
+
+/*------------pu D-------------*/
+
+
+.pucontainer-d{
+
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    grid-area: t5 ;
+    position: relative;
+    
+
+}
+
+
+.pusubcontainer-d{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/light.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t5;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.pud{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+   
+}
+
+.pusubcontainer-dhov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t5;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+}
+
+
+.pusubcontainer-dhov:hover{
+    width: 100%;
+    height:100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t5;
+    z-index: 2;
+
+    
+}
+
+.pudgrid{
+visibility: hidden;
+width: 100%;
+height: 95%;
+position: relative;
+display: grid;
+grid-template-areas:
+                     "ta1"
+                     "ta2"
+                     "ta3"
+                     "ta4"
+                     "ta5"                   
+;
+margin-left: 0%;
+margin-right: 0%;
+box-shadow: 0 0.5em 0.5em -0.4em #fbfcfac2;
+
+}
+
+
+.pusubcontainer-dhov:hover .pudgrid{
+
+    
+    visibility: visible;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+    transition: all 0.9s ease-in-out;
+    border-bottom-style: solid;
+    box-shadow: 0 0.5em 0.5em -0.3em #e3fc02;
+    }
+
+.pucted{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+   
+}
+
+
+.pusubcontainer-dhov:hover .pucted{
+
+    visibility: visible;
+    transition: all 0.4s ease;
+
+
+
+
+}
+
+
+.putdp{
+
+    display: flex;
+    justify-content: center;
+    transition: all 0.8s ease-in-out 0.6s;
+
+}
+
+.putdp:hover{
+    display: flex;
+    justify-content: center;
+
+}
+
+.putddp{
+    display: flex;
+    justify-content: center;
+    transition: all 0.4s ease 0.2s;
+    padding-bottom: 0%;
+    margin-top: 0;
+    color: #ffffff;
+
+}
+
+
+.pulogoanid{
+    width: 100%;
+    height: 12vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.pusubcontainer-dhov:hover .pulogoanid{
+
+    grid-area: ta1;
+    visibility: visible;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+
+}
+
+
+.putitle-d{
+    color: #ffffff;
+    width: 0;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    padding-top: 100%;
+
+
+}
+
+.pusubcontainer-dhov:hover .putitle-d{
+
+    grid-area: ta4;
+
+    visibility: visible;
+    width: 100%;
+    padding-top: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.pusubcontainer-dhov:hover .pusubtitle-d{
+
+    grid-area: ta5;
+    visibility: visible;
+    width: 100%;
+    padding-top: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    display: block;
+    
+}
+
+.pusublined{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+
+    color: white;
+
+}
+.pusubcontainer-dhov:hover .pusublined{
+
+    grid-area: ta5;
+    visibility: hidden;
+    width: 100%;
+
+    padding-top: 5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.pusubcontainer-dhov:hover .pusubsublined{
+
+    grid-area: ta5;
+    visibility: visible;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transition: all 0.9s ease-in-out;
+    border-bottom-style: solid;
+    box-shadow: 0 0.5em 0.5em -0.4em #e3fc02;
+
+}
+
+
+.pucontplagd{
+  
+  grid-area: ta3;
+  display: flex;
+  justify-content: center;
+}
+
+
+.puplaylogd{
+    
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    visibility: hidden;
+    width: 0;
+
+    
+
+    
+
+}
+
+
+.pusubcontainer-dhov:hover .puplaylogd{
+    visibility: visible;
+    padding-bottom: 0%;
+    width: 50px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*---SECTION SHOWS-------*/
+
+.shgrid{
+    position: relative;
+    display: grid;
+    gap:2%;
+    grid-template-areas:
+    "t1 t1 t2 t2 t2 t2"
+    "t1 t1 t2 t2 t2 t2"
+    "t3 t3 t3 t3 t5 t5"
+    "t3 t3 t3 t3 t5 t5"
+  
+    ;
+    width: 100%;
+    height: 800px;
+    z-index: 0;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 0;
+    margin-bottom: 10%;
+    overflow: hidden;
+
+  
+}
+
+
+/*--- sh A -------*/
+
+
+.shcontainer-a{
+
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    grid-area: t1 ;
+    position: relative;
+    
+
+}
+
+.shsubcontainer-a{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/removedores-niceto-club.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t1;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.sha{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: #e2fb01;
+
+   
+}
+
+.shsubcontainer-ahov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t1;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+}
+
+.shsubcontainer-ahov:hover{
+    width: 100%;
+    height:100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t1;
+    z-index: 2;
+
+    
+}
+
+.shagrid{
+visibility: hidden;
+width: 100%;
+height: 95%;
+position: relative;
+display: grid;
+grid-template-areas:
+                     "ta1"
+                     "ta2"
+                     "ta3"
+                     "ta4"
+                     "ta5"                   
+;
+margin-left: 0%;
+margin-right: 0%;
+box-shadow: 0 0.5em 0.5em -0.4em #fbfcfac2;
+
+}
+
+.shsubcontainer-ahov:hover .shagrid{
+
+    
+    visibility: visible;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+    transition: all 0.9s ease-in-out;
+    border-bottom-style: solid;
+    box-shadow: 0 0.5em 0.5em -0.3em #e3fc02;
+    }
+ 
+.shctea{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+   
+}
+
+.shsubcontainer-ahov:hover .shctea{
+
+    visibility: visible;
+
+    transition: all 0.4s ease;
+
+
+}
+
+.shtap{
+
+    display: flex;
+    justify-content: center;
+    transition: all 0.8s ease-in-out 0.6s;
+
+}
+
+.shtap:hover{
+    display: flex;
+    justify-content: center;
+
+}
+.shtdap{
+    display: flex;
+    justify-content: center;
+    transition: all 0.4s ease 0.2s;
+    padding-bottom: 0%;
+    margin-top: 0;
+    color: #ffffff;
+
+}
+
+.shlogoania{
+    width: 100%;
+    height: 12vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.shsubcontainer-ahov:hover .shlogoania{
+
+    grid-area: ta1;
+    visibility: visible;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+
+}
+
+.shtitle-a{
+    color: #ffffff;
+    width: 0;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    padding-top: 100%;
+
+
+}
+
+.shsubcontainer-ahov:hover .shtitle-a{
+
+    grid-area: ta4;
+
+    visibility: visible;
+    width: 100%;
+    padding-top: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.shsubcontainer-ahov:hover .shsubtitle-a{
+
+    grid-area: ta5;
+    visibility: visible;
+    width: 100%;
+    padding-top: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    display: block;
+    
+}
+
+.shsublinea{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+
+    color: white;
+
+}
+.shsubcontainer-ahov:hover .shsublinea{
+
+    grid-area: ta5;
+    visibility: hidden;
+    width: 100%;
+    padding-top: 5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.shsubcontainer-ahov:hover .shsubsublinea{
+
+    grid-area: ta5;
+    visibility: visible;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transition: all 0.9s ease-in-out;
+    border-bottom-style: solid;
+    box-shadow: 0 0.5em 0.5em -0.4em #e3fc02;
+
+}
+
+
+.shcontplaga{
+  
+  grid-area: ta3;
+  display: flex;
+  justify-content: center;
+}
+
+.shplayloga{
+    
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    visibility: hidden;
+    width: 0;
+
+    
+
+    
+
+}
+.shsubcontainer-ahov:hover .shplayloga{
+    visibility: visible;
+    padding-bottom: 0%;
+    width: 50px;
+
+
+}
+
+
+
+
+/*--- sh b -------*/
+
+
+
+
+.shcont-b{
+
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    grid-area: t2;
+    position: relative;
+
+    
+
+}
+
+.shsubcont-b{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/removedores2.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t2;
+    z-index: 1;
+    overflow: hidden;
+
+
+
+}
+
+.shbgrid{
+    width: 100%;
+    height:100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+                         "ta6 ta4 ta4 ta7"
+                         "ta6 ta4 ta4 ta7"
+                         "ta1 ta1 ta8 ta3"
+                         "ta1 ta1 ta8 ta3"
+    ;
+
+}
+.shb{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+   
+}
+
+.shsubcont-bhov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t2;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+
+    
+
+
+}
+
+.shsubcont-bhov:hover{
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t2;
+    z-index: 2;
+   
+    
+}
+
+.shcteb{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    
+    
+    
+}
+
+.shsubcont-bhov:hover .shcteb{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    
+
+}
+
+.shtbp{
+    color: #ffffff;
+    width: 100%;
+    transition: all 0.1s ease-in-out;
+   
+}
+
+.shtbp:hover{
+    width: 100%;
+}
+
+.shtdbp{
+    color: #ffffff;
+    width: 100%;
+    font-family: comfort;
+
+}
+
+.shtdbp:hover{
+  
+    width: 100%;
+    
+}
+
+.shcontlnib{
+    position: relative;
+    width: 100%;
+    grid-area: ta4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shlogoanib{
+    grid-area: ta4;
+    width: 100%;
+    height: 60%;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.shsubcont-bhov:hover .shlogoanib{
+
+    
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.shcontcopyb{
+
+    position: relative;
+    width: 100%;
+    grid-area: ta1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+.shcopyb{
+
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+    padding-left: 15%;
+
+  
+
+}
+
+.shsubcont-bhov:hover .shcopyb{
+    visibility: visible;
+    width: 100%;
+    position: absolute;
+    
+
+}
+
+.shcontplayb{
+    position: relative;
+    grid-area: ta3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.shplaylogb{
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    width: 100%;  
+    height: 25%;
+
+    display: block;
+    visibility: hidden;
+    margin: 0;
+    position: absolute;
+   
+
+}
+
+.shsubcont-bhov:hover .shplaylogb{
+    visibility: visible;
+    position: absolute;
+    width: 50px;
+    margin: 0;
+   
+    transition: all 0.1s ease-in-out;
+
+
+
+}
+
+.shclo.shb{
+    color:#ffffff;
+    width: 70%;
+}
+
+
+
+
+
+
+
+/*--- sh C -------*/
+
+
+
+.shcont-c{
+
+    display: flex;
+    z-index: 8;
+    justify-content: center;
+    align-items: center;
+    grid-area: t3;
+    position: relative;  
+
+}
+
+
+.shsubcont-c{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/Manas.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t3;
+    z-index: 1;
+    overflow: hidden;
+
+
+
+}
+
+.shcgrid{
+    width: 100%;
+    height:100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+                         "ta6 ta4 ta4 ta7"
+                         "ta6 ta4 ta4 ta7"
+                         "ta1 ta1 ta8 ta3"
+                         "ta1 ta1 ta8 ta3"
+    ;
+
+}
+.shc{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+   
+}
+
+.shsubcont-chov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t3;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+
+    
+
+
+}
+
+.shsubcont-chov:hover{
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t3;
+    z-index: 2;
+   
+    
+}
+
+
+.shctec{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    
+    
+    
+}
+
+
+.shsubcont-chov:hover .shctec{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    
+
+}
+
+
+.shtcp{
+    color: #ffffff;
+    width: 100%;
+    transition: all 0.1s ease-in-out;
+   
+}
+
+.shtcp:hover{
+    width: 100%;
+}
+
+.shtdcp{
+    color: #ffffff;
+    width: 100%;
+    font-family: comfort;
+
+
+
+}
+
+
+.shtdcp:hover{
+  
+    width: 100%;
+    
+
+
+}
+
+.shcontlnic{
+    position: relative;
+    width: 100%;
+    grid-area: ta4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shlogoanic{
+    grid-area: ta4;
+    width: 100%;
+    height: 60%;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.shsubcont-chov:hover .shlogoanic{
+    
+
+    
+    visibility: visible;
+    position: absolute;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.shcontcopyc{
+
+    position: relative;
+    width: 100%;
+    grid-area: ta1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.shcopyc{
+
+
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+    padding-left: 15%;
+
+  
+
+}
+
+
+.shsubcont-chov:hover .shcopyc{
+    visibility: visible;
+    width: 100%;
+    position: absolute;
+    
+
+}
+.shcontplayc{
+    position: relative;
+    grid-area: ta3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.shplaylogc{
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    width: 100%;  
+    height: 25%;
+
+    display: block;
+    visibility: hidden;
+    margin: 0;
+    position: absolute;
+   
+
+}
+
+.shsubcont-chov:hover .shplaylogc{
+    visibility: visible;
+    position: absolute;
+    width: 50px;
+    margin: 0;
+   
+    transition: all 0.1s ease-in-out;
+
+
+
+}
+
+
+
+.shclo.shc{
+    color:#ffffff;
+    width: 70%;
+}
+
+
+
+
+
+
+
+/*------------sh D-------------*/
+
+
+.shcontainer-d{
+
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    grid-area: t5 ;
+    position: relative;
+    
+
+}
+
+
+.shsubcontainer-d{
+    width: 100%;
+    height:100%;
+    background-image: url(../images/street.jpg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: t5;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.shd{
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+   
+}
+
+.shsubcontainer-dhov{
+
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t5;
+    z-index: 2;
+    transition: all 1.5s ease-in;
+
+
+}
+
+
+.shsubcontainer-dhov:hover{
+    width: 100%;
+    height:100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-area: t5;
+    z-index: 2;
+
+    
+}
+
+.shdgrid{
+visibility: hidden;
+width: 100%;
+height: 95%;
+position: relative;
+display: grid;
+grid-template-areas:
+                     "ta1"
+                     "ta2"
+                     "ta3"
+                     "ta4"
+                     "ta5"                   
+;
+margin-left: 0%;
+margin-right: 0%;
+box-shadow: 0 0.5em 0.5em -0.4em #fbfcfac2;
+
+}
+
+
+.shsubcontainer-dhov:hover .shdgrid{
+
+    
+    visibility: visible;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+    transition: all 0.9s ease-in-out;
+    border-bottom-style: solid;
+    box-shadow: 0 0.5em 0.5em -0.3em #e3fc02;
+    }
+
+.shcted{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+   
+}
+
+
+.shsubcontainer-dhov:hover .shcted{
+
+    visibility: visible;
+    transition: all 0.4s ease;
+
+
+
+
+}
+
+
+.shtdp{
+
+    display: flex;
+    justify-content: center;
+    transition: all 0.8s ease-in-out 0.6s;
+
+}
+
+.shtdp:hover{
+    display: flex;
+    justify-content: center;
+
+}
+
+.shtddp{
+    display: flex;
+    justify-content: center;
+    transition: all 0.4s ease 0.2s;
+    padding-bottom: 0%;
+    margin-top: 0;
+    color: #ffffff;
+
+}
+
+
+.shlogoanid{
+    width: 100%;
+    height: 12vh;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.shsubcontainer-dhov:hover .shlogoanid{
+
+    grid-area: ta1;
+    visibility: visible;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+
+}
+
+
+.shtitle-d{
+    color: #ffffff;
+    width: 0;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    padding-top: 100%;
+
+
+}
+
+.shsubcontainer-dhov:hover .shtitle-d{
+
+    grid-area: ta4;
+
+    visibility: visible;
+    width: 100%;
+    padding-top: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.shsubcontainer-dhov:hover .shsubtitle-d{
+
+    grid-area: ta5;
+    visibility: visible;
+    width: 100%;
+    padding-top: 0%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    display: block;
+    
+}
+
+.shsublined{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+
+    color: white;
+
+}
+.shsubcontainer-dhov:hover .shsublined{
+
+    grid-area: ta5;
+    visibility: hidden;
+    width: 100%;
+
+    padding-top: 5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.shsubcontainer-dhov:hover .shsubsublined{
+
+    grid-area: ta5;
+    visibility: visible;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transition: all 0.9s ease-in-out;
+    border-bottom-style: solid;
+    box-shadow: 0 0.5em 0.5em -0.4em #e3fc02;
+
+}
+
+
+.shcontplagd{
+  
+  grid-area: ta3;
+  display: flex;
+  justify-content: center;
+}
+
+
+.shplaylogd{
+    
+    background-image: url(../images/play-button-white-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    visibility: hidden;
+    width: 0;
+
+    
+
+    
+
+}
+
+
+.shsubcontainer-dhov:hover .shplaylogd{
+    visibility: visible;
+    padding-bottom: 0%;
+    width: 50px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------TITLE TRABAJOS------------------ */
+
+
+
+
+
+
+.sectitle{
+    color: #ffffff;
+}
+
+.subctline{
+
+    width: 15%;
+    box-shadow: 0 0.5em 0.5em -0.4em #ffd900;
+    transition: all 5s ease-in;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 1%;
+}
+
+.subctline:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em #ffffff;
+   
+}
+
+.counti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.cont{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.t{
+    padding-left: 20%;
+    padding-right: 20%;
+    color: white;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+
+
+/* Menu WORKS ---------------------------------------------*/
+
+.menuworks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6%;
+    margin-top: 3%;
+}
+
+.site_navworks{
+    background: #08080800;
+    border: none;
+    grid-area: h3;
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0.5em 0.5em -0.4em #ffffff;
+    transform: translateY(-0.55em);
+    transition: all 3s ease-in;
+   
+
+}
+
+.site_navworks:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em #ffffff00;
+    transition: all 1s ease-in;
+
+
+
+}
+
+.menunavworks{
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+    height: 5vh;
+
+
+}
+
+.menunavworks a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menunavworks a:hover{
+    color: #ffffffc9;
+
+
+}
+
+
+
+
+/* TITLE SOMOS ---------------------------------------------*/
+
+
+.titlesomos{
+
+   overflow: hidden;
+
+} 
+
+.countlinesomos {
+    display: flex;
+    justify-content: center;
+}
+
+.subctlinesomos{
+
+    width: 15%;
+    box-shadow: 0 0.5em 0.5em -0.4em #3b93c3;
+    transition: all 5s ease-in;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 1%;
+}
+
+.subctlinesomos:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em #ffd900;
+   
+}
+
+.countisomos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+.contsomos{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.tsomos{
+    padding-left: 20%;
+    padding-right: 20%;
+    color: white;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.sectiontwo{
+    position: relative;
+    background: transparent;
+    margin-top: 10%;
+    width: 100%;
+}
+
+
+
+
+
+/* TITLE CONTACTO ---------------------------------------------*/
+
+.titlecontacto{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+
+
+.counticontacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.conttitlecontacto{
+   
+    display: block;
+    font-size: 2em;
+    font-family: comfort, Helvetica;
+    color:#ffffff;
+  
+    
+}
+
+.countlinecontacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subctlinecontacto{
+
+    width: 15%;
+    box-shadow: 0 0.5em 0.5em -0.4em #ed3fa2;
+    transition: all 5s ease-in;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 1%;
+}
+
+.subctlinecontacto:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em #ffd900;
+   
+}
+
+.contact{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contcontact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 5%;
+
+
+
+
+}
+
+.contlogof{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logof{
+ width: 20%;
+ max-width: 450px;
+ min-width: 120px;
+}
+
+.contfcopy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.counticontacta{
+    grid-area: sec2;
+    width:50%;
+}
+
+.counticontactb{
+    grid-area: sec3;
+
+}
+
+.counticontactc{
+    grid-area: sec4;
+
+}
+
+
+.tcontact{
+   
+    color: white;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+
+.sect{
+    height: 800px;
+}
+
+.test1{
+    width: 80%;
+    height: 80vh;
+    background-color: yellow;
+    display:none;
+}
+.test2{
+    width: 80%;
+    height: 80vh;
+    background-color: blue;
+    display:none;
+}
+
+
+.socialmedia{
+    display: flex;
+    justify-content: center;
+}
+.fi{
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 5%;
+}
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERYS-----------------------------------------------------*/
+
+
+@media all and (max-width: 600px) {
+
+    .sidenav{
+        margin-top: 5% !important;
+        background-color:  #070000c7 !important;
+    }
+
+    .sidenav li a{
+       
+        color: #ffffff !important;
+    }
+    .sidenav li a:active{
+       
+        color: #ffffff81 !important;
+      
+    }
+
+    .botnna {
+        margin: 1%;
+    }
+
+    .headroom {  
+       
+       background-color: #070000c7;
+        grid-template-areas: "h1 h3 h3";
+    }
+
+  
+    .brand{
+        min-height: 0;
+    }
+    .logoD {
+        min-width: 100px;
+    }
+
+
+
+    .site_nav{
+        display: none;
+    }
+   
+    .wrapper{
+    grid-area: h3;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+    color: #ffffff;
+  }
+
+
+.layoutgrid{
+    row-gap: 1%;
+    grid-template-areas:
+   /* "t1 t1 t1 t1 t1 t1"
+    "t2 t2 t2 t2 t2 t2"
+    "t3 t3 t3 t3 t3 t3"
+    "t4 t4 t4 t4 t4 t4"
+    "t5 t5 t5 t5 t5 t5"
+    "t6 t6 t6 t6 t6 t6"
+    "t7 t7 t7 t7 t7 t7"*/
+
+    "t1 t1"
+    "t2 t2"
+    "t3 t3"
+    "t5 t5"
+    "t6 t6"
+    "t7 t7"
+ ;
+
+ height: 2800px;
+ padding-right: 0%;
+ padding-left: 0%
+
+}
+
+
+.ifra{
+    
+    height: 70vh;
+
+}
+.wrap{
+   height: 70vh;
+}
+
+
+.contfcopy{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 12px;
+}
+
+}
+
+@media all and (min-width: 602px) {
+
+    .headroom {
+        background-color: rgba(0, 0, 0, 0.911);
+
+        grid-template-areas: "h1 h3 h3";
+    }
+
+.wrapper{
+    display: none;
+}
+
+.site_nav{
+    margin-left: 15%;
+}
+
+.botnna{
+
+    margin-left: 0;
+}
+   
+.layoutgrid{
+    padding-right: 5%;
+    padding-left: 5%
+   
+}
+
+.subcontainer-ahov:hover .agrid {
+    
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+}
+
+@media all and (min-width: 1024px) {
+     
+  .headroom{
+      grid-template-areas: "h1 h2 h3";
+      
+
+  }
+
+  .site_nav{
+      width: 90%;
+      margin-left: 0;
+  }
+
+
+}
+
+@media all and (min-width: 1280px) {
+     
+    .headroom{
+        grid-template-areas: "h1 h2 h3";
+        height: 15vh;
+        
+  
+    }
+  
+    .site_nav{
+        max-width: 70%;
+        margin-left: 0;
+    }
+  
+    .subcontainer-ahov:hover .agrid {
+    
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+
+
+  
+}
+
